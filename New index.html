@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ujumbe wa Motivation</title>
+  <style>
+    body {
+      background: linear-gradient(180deg, #0f1724, #081020);
+      color: #e6eef6;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      cursor: pointer;
+      width: 300px;
+    }
+    .box:hover {
+      background: rgba(255,255,255,0.08);
+    }
+    #message {
+      display: none;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #b8f1ff;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" onclick="showMessage()">
+    <h2>Touch here</h2>
+    <div id="message">
+      <strong>Ujumbe wangu wa Motivation:</strong><br><br>
+      Wewe ni nguvu zaidi kuliko unavyofikiri. Hatua ndogo za leo zinaweza kubadilisha kesho yako.<br><br>
+      Endelea kujifunza, kuwa ndoto yako, na usikate tamaa — mafanikio yanahitaji uvumilivu.<br><br>
+      Iva msimamo, fanya kazi kwa bidii, na kumbuka: kila kosa ni somo la mafanikio.
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById("message");
+      msg.style.display = msg.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
